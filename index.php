@@ -33,10 +33,16 @@ echo $usuario;*/
 $aluno->insert();
 echo $aluno;*/
 
-//
+/*//Fazendo update no banco
 $usuario = new Usuario();
 $usuario->loadById(7);
 $usuario->update("zezinho", "88888");
+echo $usuario;*/
+
+//Excluindo usuário
+$usuario = new Usuario();
+$usuario->loadById(6);
+$usuario->delete();
 echo $usuario;
 
 
